@@ -1,108 +1,153 @@
-# LLM Engineering - Master AI and LLMs
+# LLM Engineering — Projects Portfolio
 
-## Your 8 week journey to proficiency starts today
+A collection of projects from the **LLM Engineering** course (weeks 1–8) plus personal experiments. Each week builds on the last, ending with an autonomous agentic system in Week 8.
 
-![Voyage](assets/voyage.jpg)
+> **Repo layout:** Course material lives in `week1/` … `week8/` at the repository root. Personal notebooks are in [`my_llm_projects/`](my_llm_projects/).
 
-_If you're looking at this in Cursor, please right click on the filename in the Explorer on the left, and select "Open preview", to view the formatted version._
+---
 
-I'm so happy you're joining me on this path. We'll be building immensely satisfying projects in the coming weeks. Some will be easy, some will be challenging, many will ASTOUND you! The projects build on each other so you develop deeper and deeper expertise each week. One thing's for sure: you're going to have a lot of fun along the way.
+## Course projects by week
 
-## IMPORTANT ANNOUNCEMENT - DECEMBER 2025 - PLEASE READ
+### Week 1 — APIs, scraping & first business app
 
-The course material has been completely refreshed with all new weeks. If you'd prefer to stick with the code for the original videos, simply do this from your Anaconda Prompt or Terminal:  
-`git fetch`  
-`git checkout original`
+| Project | Location | Description |
+|---------|----------|-------------|
+| **Your first lab** | [`week1/day1.ipynb`](../week1/day1.ipynb) | Connect to OpenAI (and Ollama); first calls to frontier models. |
+| **OpenAI client & Ollama** | [`week1/day2.ipynb`](../week1/day2.ipynb) | OpenAI Python SDK, local models, and comparing providers. |
+| **Web scraper** | [`week1/scraper.py`](../week1/scraper.py) | Fetch and extract text from company websites. |
+| **Company brochure generator** | [`week1/day5.ipynb`](../week1/day5.ipynb) | Scrape a company site and generate a marketing brochure with an LLM. |
+| **End-of-week exercise** | [`week1/week1 EXERCISE.ipynb`](../week1/week1%20EXERCISE.ipynb) | Technical Q&A tool: answer coding questions with explanations (OpenAI or Ollama). |
 
-Any questions, please ask me on Udemy or at ed@edwarddonner.com. More details at the top of the course resources [here](https://edwarddonner.com/2024/11/13/llm-engineering-resources/).
+---
 
-### Before you begin
+### Week 2 — Gradio, multi-model & tools
 
-I'm here to help you be most successful with your learning. If you hit any snafus, or if you have any ideas on how I can improve the course, please do reach out in the platform or by emailing me direct (ed@edwarddonner.com). It's always great to connect with people on LinkedIn to build up the community - you'll find me here:  
-https://www.linkedin.com/in/eddonner/   
-And I'm starting to build a YouTube channel with extra content - please [check it out here](https://youtube.com/@edward.donner).  
-And this is new to me, but I'm also trying out X/Twitter at [@edwarddonner](https://x.com/edwarddonner) - if you're on X, please show me how it's done 😂  
+| Project | Location | Description |
+|---------|----------|-------------|
+| **Multi-model chat** | [`week2/day1.ipynb`](../week2/day1.ipynb) – [`day4.ipynb`](../week2/day4.ipynb) | OpenAI-compatible clients for Gemini, Groq, DeepSeek, Ollama; streaming and system prompts. |
+| **Airline AI assistant** | [`week2/day5.ipynb`](../week2/day5.ipynb) | Gradio chatbot with tools, streaming, and multimodal (image) support. |
+| **End-of-week exercise** | [`week2/week2 EXERCISE.ipynb`](../week2/week2%20EXERCISE.ipynb) | Full Gradio prototype of the Week 1 Q&A tool with model switching and optional audio. |
 
-Resources to accompany the course, including the slides and useful links, are here:  
-https://edwarddonner.com/2024/11/13/llm-engineering-resources/
+---
 
-And a useful FAQ with common questions is here:  
-https://edwarddonner.com/faq/
+### Week 3 — Open-source models & synthetic data
 
-## Instant Gratification instructions for Week 1, Day 1 - with Llama 3.2 **not** Llama 3.3
+| Project | Location | Description |
+|---------|----------|-------------|
+| **HuggingFace pipelines** | [`week3/day2.ipynb`](../week3/day2.ipynb) | Colab: transformers pipelines on GPU (see notebook for Colab link). |
+| **Tokenizers** | [`week3/day3.ipynb`](../week3/day3.ipynb) | How tokenization affects cost and context. |
+| **Synthetic data generator** | [`week3/generate_synthetic_data.ipynb`](../week3/generate_synthetic_data.ipynb) | Gradio app to generate structured datasets with LLMs. |
+| **Meeting minutes creator** | [`week3/day5.ipynb`](../week3/day5.ipynb) | Transcribe and summarize meetings with open-source + frontier models. |
 
-### Important note: see my warning about Llama3.3 below - it's too large for home computers! Stick with llama3.2 - several students have missed this warning...
+---
 
-We will start the course by installing Ollama so you can see results immediately!
-1. Download and install Ollama from https://ollama.com noting that on a PC you might need to have administrator permissions for the install to work properly
-2. On a PC, start a Command prompt / Powershell (Press Win + R, type `cmd`, and press Enter). On a Mac, start a Terminal (Applications > Utilities > Terminal).
-3. Run `ollama run llama3.2` or for smaller machines try `ollama run llama3.2:1b` - **please note** steer clear of Meta's latest model llama3.3 because at 70B parameters that's way too large for most home computers!  
-4. If this doesn't work: you may need to run `ollama serve` in another Powershell (Windows) or Terminal (Mac), and try step 3 again. On a PC, you may need to be running in an Admin instance of Powershell.  
-5. And if that doesn't work on your box, I've set up this on the cloud. This is on Google Colab, which will need you to have a Google account to sign in, but is free:  https://colab.research.google.com/drive/1-_f5XZPsChvfU1sJ0QqCePtIuc55LSdu?usp=sharing
+### Week 4 — Code generation
 
-Any problems, please contact me!
+| Project | Location | Description |
+|---------|----------|-------------|
+| **Code generator** | [`week4/day3.ipynb`](../week4/day3.ipynb) – [`day5.ipynb`](../week4/day5.ipynb) | LLMs write, explain, and improve Python; compare models side by side. |
+| **Supporting modules** | [`week4/styles.py`](../week4/styles.py), [`system_info.py`](../week4/system_info.py) | UI styling and environment helpers for code-gen demos. |
 
-## Before the Setup instructions - a special note
+---
 
-Early on in the course (on Day 2), I give a demo of a very cool, popular product called Claude Code. It's an AI coding tool, similar to Cursor that we use on the course. I'm only showing this as an example of Agentic AI in action; it's not a tool that's covered explicitly on this course, particularly as we're in Cursor. But if you want to use Claude Code yourself, the Quick Start guide from Anthropic is [here](https://docs.claude.com/en/docs/claude-code/quickstart).
+### Week 5 — RAG (Retrieval-Augmented Generation)
 
-## OK - now on to Setup instructions
+| Project | Location | Description |
+|---------|----------|-------------|
+| **RAG week intro** | [`week5/day1.ipynb`](../week5/day1.ipynb) | Embeddings, chunking, and vector stores for **Insurellm** (fictional insurance company). |
+| **Knowledge base** | [`week5/knowledge-base/`](../week5/knowledge-base/) | Employee and product markdown docs used as RAG source material. |
+| **RAG chatbot** | [`week5/day2.ipynb`](../week5/day2.ipynb) – [`day4.ipynb`](../week5/day4.ipynb) | Build and refine a company Q&A bot with Chroma and LangChain. |
+| **Pro RAG implementation** | [`week5/pro_implementation/`](../week5/pro_implementation/) | Production-style ingest + answer pipeline (`ingest.py`, `answer.py`) with advanced chunking. |
+| **Advanced RAG** | [`week5/day5.ipynb`](../week5/day5.ipynb) | LLM-driven chunking, preprocessing, and retrieval tuning. |
 
-After we do the Ollama quick project, and after I introduce myself and the course, we get to work with the full environment setup.  
+---
 
-Hopefully I've done a decent job of making these guides bulletproof - but please contact me right away if you hit roadblocks:
+### Week 6 — “The Price is Right” (data & frontier fine-tuning)
 
-Setup instructions: [Setup Instructions All Platforms](setup/SETUP-new.md)
+| Project | Location | Description |
+|---------|----------|-------------|
+| **Capstone: price prediction** | [`week6/day1.ipynb`](../week6/day1.ipynb) – [`day5.ipynb`](../week6/day5.ipynb) | Predict Amazon product prices from descriptions: curation, baselines, neural nets, LLMs. |
+| **Pricer package** | [`week6/pricer/`](../week6/pricer/) | Data loaders, evaluators, and deep learning models for the pricing task. |
+| **Fine-tune frontier model** | [`week6/day5.ipynb`](../week6/day5.ipynb) | OpenAI fine-tuning on product/price pairs. |
+| **Optional: deep NN** | [`week6/redemption_train.ipynb`](../week6/redemption_train.ipynb), [`redemption_run.ipynb`](../week6/redemption_run.ipynb) | Train/run a deeper network on the pricing dataset. |
 
-### An important point on API costs (which are optional! No need to spend if you don't wish)
+---
 
-During the course, I'll suggest you try out the leading models at the forefront of progress, known as the Frontier models. I'll also suggest you run open-source models using Google Colab. These services have some charges, but I'll keep cost minimal - like, a few cents at a time. And I'll provide alternatives if you'd prefer not to use them.
+### Week 7 — Open-source fine-tuning
 
-Please do monitor your API usage to ensure you're comfortable with spend; I've included links below. There's no need to spend anything more than a couple of dollars for the entire course. Some AI providers such as OpenAI require a minimum credit like \$5 or local equivalent; we should only spend a fraction of it, and you'll have plenty of opportunity to put it to good use in your own projects. During Week 7 you have an option to spend a bit more if you're enjoying the process - I spend about \$10 myself and the results make me very happy indeed! But it's not necessary in the least; the important part is that you focus on learning.
+| Project | Location | Description |
+|---------|----------|-------------|
+| **Capstone (continued)** | [`week7/day1.ipynb`](../week7/day1.ipynb), [`day2.ipynb`](../week7/day2.ipynb) | Extend price prediction with open-source evaluation. |
+| **Fine-tune Llama (Colab)** | [`week7/day3 and 4.ipynb`](../week7/day3%20and%204.ipynb) | QLoRA fine-tuning on an open-source model for price prediction (Colab link in notebook). |
+| **Results & comparison** | [`week7/day5.ipynb`](../week7/day5.ipynb), [`results.ipynb`](../week7/results.ipynb) | Evaluate fine-tuned vs baseline models. |
 
-### Free alternative to Paid APIs
+---
 
-See [Guide 9](guides/09_ai_apis_and_ollama.ipynb) in the guides directory for the detailed approach with exact code for Ollama, Gemini, OpenRouter and more!
+### Week 8 — Agentic AI: deal-hunting system
 
-### How this Repo is organized
+| Project | Location | Description |
+|---------|----------|-------------|
+| **The Price is Right (agents)** | [`week8/day1.ipynb`](../week8/day1.ipynb) – [`day5.ipynb`](../week8/day5.ipynb) | Multi-agent framework that scans deals, estimates prices, and surfaces bargains. |
+| **Deal agent framework** | [`week8/deal_agent_framework.py`](../week8/deal_agent_framework.py) | Orchestrates planning, scanning, and ensemble pricing agents. |
+| **Gradio UI** | [`week8/price_is_right.py`](../week8/price_is_right.py) | “The Price is Right” — autonomous deal-hunting web UI. |
+| **Agents** | [`week8/agents/`](../week8/agents/) | Scanner, frontier, specialist, ensemble, planning, and messaging agents. |
+| **Modal services** | [`week8/pricer_service.py`](../week8/pricer_service.py), [`pricer_ephemeral.py`](../week8/pricer_ephemeral.py) | Hosted Llama pricing services on Modal. |
 
-There are folders for each of the "weeks", representing modules of the class, culminating in a powerful autonomous Agentic AI solution in Week 8 that draws on many of the prior weeks.    
-Follow the setup instructions above, then open the Week 1 folder and prepare for joy.
+---
 
-### The most important part
+## Personal projects (`my_llm_projects/`)
 
-The mantra of the course is: the best way to learn is by **DOING**. I don't type all the code during the course; I execute it for you to see the results. You should work along with me or after each lecture, running each cell, inspecting the objects to get a detailed understanding of what's happening. Then tweak the code and make it your own. There are juicy challenges for you throughout the course. I'd love it if you wanted to submit a Pull Request for your code (see the Github guide in the guides folder) and I can make your solutions available to others so we share in your progress; as an added benefit, you'll be recognized in GitHub for your contribution to the repo. While the projects are enjoyable, they are first and foremost designed to be _educational_, teaching you business skills that can be put into practice in your work.
+| Notebook | Description |
+|----------|-------------|
+| [`basic_chatbot_llm_wrapper.ipynb`](basic_chatbot_llm_wrapper.ipynb) | CLI chatbot with rolling history, token trimming, and save-on-quit (`chat_history.json`). |
+| [`resume_summarizer.ipynb`](resume_summarizer.ipynb) | PDF resume → structured summary (skills, experience, education) via Chat Completions. |
 
-## Starting in Week 3, we'll also be using Google Colab for running with GPUs
+---
 
-You should be able to use the free tier or minimal spend to complete all the projects in the class. I personally signed up for Colab Pro+ and I'm loving it - but it's not required.
+## Setup
 
-Learn about Google Colab and set up a Google account (if you don't already have one) [here](https://colab.research.google.com/)
+1. **Python 3.10+** and a virtual environment (the course uses conda/`llms` — see [`setup/SETUP-new.md`](../setup/SETUP-new.md)).
 
-The colab links are in the folders for Week 3 and Week 7 - if you open up the lab for each day, you'll find a direct link to the colab.
+2. **Install dependencies** (full course):
 
-### Monitoring API charges
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-You can keep your API spend very low throughout this course; you can monitor spend at the dashboards: [here](https://platform.openai.com/usage) for OpenAI, [here](https://console.anthropic.com/settings/cost) for Anthropic.
+   For personal notebooks only:
 
-The charges for the exercsies in this course should always be quite low, but if you'd prefer to keep them minimal, then be sure to always choose the cheapest versions of models:
-1. For OpenAI: Always use model `gpt-4.1-nano` in the code
-2. For Anthropic: Always use model `claude-3-haiku-20240307` in the code instead of the other Claude models
-3. During week 7, look out for my instructions for using the cheaper dataset
+   ```bash
+   pip install openai python-dotenv pypdf ipython
+   ```
 
-Please do message me or email me at ed@edwarddonner.com if this doesn't work or if I can help with anything. I can't wait to hear how you get on.
+3. **Environment variables** — create a `.env` at the repo root:
 
-<table style="margin: 0; text-align: left;">
-    <tr>
-        <td style="width: 150px; height: 150px; vertical-align: middle;">
-            <img src="assets/resources.jpg" width="150" height="150" style="display: block;" />
-        </td>
-        <td>
-            <h2 style="color:#f71;">Other resources</h2>
-            <span style="color:#f71;">I've put together this webpage with useful resources for the course. This includes links to all the slides.<br/>
-            <a href="https://edwarddonner.com/2024/11/13/llm-engineering-resources/">https://edwarddonner.com/2024/11/13/llm-engineering-resources/</a><br/>
-            Please keep this bookmarked, and I'll continue to add more useful links there over time.
-            </span>
-        </td>
-    </tr>
-</table>
+   ```env
+   OPENAI_API_KEY=your_key_here
+   ```
+
+   Later weeks may also need keys for Anthropic, Google, Groq, HuggingFace, Modal, etc. See the course [resources page](https://edwarddonner.com/2024/11/13/llm-engineering-resources/).
+
+4. **Week 3 & 7:** Some labs run on **Google Colab** (GPU). Links are in the day notebooks.
+
+5. **Resume summarizer:** Place `resume.pdf` next to the notebook or update `pdf_path` in the notebook.
+
+---
+
+## Running
+
+- Open notebooks in Jupyter, VS Code, or Cursor and run cells in order.
+- Week 8 agent stack may require **Modal** setup and running services before the Gradio UI.
+- Personal chatbot: type `quit` to save and exit.
+
+---
+
+## Notes
+
+- Do not commit `.env`, API keys, or large model weights.
+- Add `chat_history.json`, `week8/memory.json`, and local vector DB folders to `.gitignore` when publishing.
+- Course material is based on [LLM Engineering](https://edwarddonner.com/2024/11/13/llm-engineering-resources/) by Edward Donner; personal projects are independent exercises.
+
+## License
+
+Course code follows the upstream repository license. Personal projects — use and adapt as you like.
