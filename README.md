@@ -2,7 +2,7 @@
 
 A collection of projects from the **LLM Engineering** course (weeks 1–8) plus personal experiments. Each week builds on the last, ending with an autonomous agentic system in Week 8.
 
-> **Repo layout:** Course material lives in `week1/` … `week8/` at the repository root. Personal notebooks are in [`my_llm_projects/`](my_llm_projects/).
+> **Repo layout:** Course material lives in `week1/` … `week8/` at the repository root. 
 
 ---
 
